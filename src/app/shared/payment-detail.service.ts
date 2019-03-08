@@ -13,6 +13,7 @@ export class PaymentDetailService {
   
   constructor(private http: HttpClient) { }
 
+  // CRUD
   postPaymentDetail(){
     return this.http.post(this.rootURL + '/PaymentDetail', this.formData);
   }
